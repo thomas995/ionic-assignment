@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-    <html>
+    <html> <!--  starts the HTML editor -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -22,22 +22,24 @@
 
         $stateProvider
 
-        .state('state1', { 
+        .state('state1', { <!-- state for the home page   -->
           url: '/',
           templateUrl: 'state1.html'
         })
 
-        .state('state2', {
+        .state('state2', {  <!-- state for the second page   -->
           url: '/state2',
           templateUrl: 'state2.html'
         })
 
-	.state('state3', {
+	.state('state3', { <!-- state for the third page -->
+
 	  url: '/state3',
 	  templateUrl: 'state3.html'
 	})
 
-	.state('state4', {
+	.state('state4', {  <!-- state for the last page   -->
+
 	  url: '/state4',
 	  templateUrl: 'state4.html'
 	});
@@ -47,7 +49,8 @@
 
   </head>
   <body ng-app="ionic-navview"> <!-- Sorts the layout of the pages -->
-    <ion-nav-view>
+    <ion-nav-view>  <!-- Default template for the app  -->
+
     </ion-nav-view>
 
  <!-- Black bar for the heading -->
@@ -57,22 +60,29 @@
  </div>
 
     <!-- Code for the first web page for Breakfast -->
+ 
     <script type="text/ng-template" id="state1.html">
       <ion-view view-title="Home">
-        <ion-content>
-         <br><h2>Breakfast Foods!</h2>
-	 <a href="#/state2">Go to Lunch foods.</a>
-	<br><button class="button button-full button-positive">
+        <ion-content> <!-- allows the content to be displayed  -->
+
+         <br><h2>Breakfast Foods!</h2> <!-- Title of the page -->
+          <h3><i>Press Ellipses to Show Calories for each Food</h3></i>
+	 <a href="#/state2">Go to Lunch foods.</a> <!-- Linking to the next page  -->
+
+	<button class="button button-full button-positive"> <!-- controls what colour the buttons will be  -->
 	  Omelette
-	</button><h4 style="text-align:center;" onclick="this.innerHTML='154 Calories'">...</h4>	
+	</button></button> <!-- Closes the button for the first food item   -->
+	  <h4 style="text-align:center;" onclick="this.innerHTML='154 Calories'">...</h4> <!-- Allows click event to activate allowing calories to be seen  -->
 
 	<button class="button button-full button-calm">
  	 Full English Breakfast
-	  </button></button><h4 style="text-align:center;" onclick="this.innerHTML='807 Calories'">...</h4>	
+	  </button>
+	  <h4 style="text-align:center;" onclick="this.innerHTML='807 Calories'">...</h4>	
 
 	<button class="button button-full button-energized">
 	  Weetabix
-	 </button></button><h4 style="text-align:center;" onclick="this.innerHTML='68 Calories per Biscuit'">...</h4>	
+	 </button>
+          <h4 style="text-align:center;" onclick="this.innerHTML='68 Calories per Biscuit'">...</h4>	
 
 	<button class="button button-full button-balanced">
 	  Yogurt and Fruit 
@@ -101,15 +111,15 @@
 
         </ion-content>
       </ion-view>
-    </script>
+    </script>  
 
      <!-- Code for the second web page for Lunch -->
 
     <script type="text/ng-template" id="state2.html">
-      <ion-view view-title="StateTwo">
+      <ion-view view-title="StateTwo"> <!-- Changes name on the tab on the browser  -->
         <ion-content>
          <br><h2>Lunch Foods!</h2></br>
-          <a href="#/state3">Go to Dinner Foods.</a>
+          <a href="#/state3">Go to Dinner Foods.</a> <!-- Linking to the next page -->
 
         <button class="button button-full button-calm">
          Chicken Caesar Salad and Dressing
@@ -147,8 +157,8 @@
           Ramen Noodle Soup
           </button></button><h4 style="text-align:center;" onclick="this.innerHTML='436 Calories'">...</h4>	
 
-        </ion-contenti>
-i      </ion-view>
+        </ion-content>
+      </ion-view>
     </script>
 
 <!-- Code for the third web page for Dinner -->
@@ -157,7 +167,7 @@ i      </ion-view>
      <ion-view view-title="StateThree">
         <ion-content>
           <br><h2>Dinner Foods!</h2></br>
-          <a href="#/state4">Go to Beverages and Snacks.</a>
+          <a href="#/state4">Go to Beverages and Snacks.</a> <!-- Linking to the last page  -->
 
         <button class="button button-full button-assertive">
          Slice of Pepperoni and Cheese Pizza
@@ -204,8 +214,7 @@ i      </ion-view>
       <ion-view view-title="StateFour">
         <ion-content>
           <br><h2>Beverages and Snacks!</h2></br>
-	<a href="#/state1">Go back to the Beginning.</a>
-
+	<a href="#/state1">Go back to the Beginning.</a> <!-- Links the page back to the beginning  -->
 
  	<br><button class="button button-full button-energized">
           Bag of Crisps
@@ -246,5 +255,6 @@ i      </ion-view>
         </ion-content>
       </ion-view>	
     </script>
-  </body>
-</html>
+  </body> <!-- closes the body tag  -->
+</html>  <!--   closes the html tag -->
+
