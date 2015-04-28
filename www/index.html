@@ -48,16 +48,16 @@
     <ion-nav-view>
     </ion-nav-view>
 
-<div class="bar bar-header bar-balanced">
+<div class="bar bar-header bar-dark">
 <h1 class="title">Calorie Counter for a Day</h1><br>
 </div>
 
     <script type="text/ng-template" id="state1.html">
       <ion-view view-title="Home">
         <ion-content>
-         <br><h2>Breakfast Foods!</h2></br>
-          <a href="#/state2">Go to Lunch foods.</a>
-
+         <br><h2>Breakfast Foods!</h2>
+	<h2 style="text-align: left"> <span-style="color: #FF0066;">Please Select<b> Only One</b> Food Item From Each List! </span></h2>
+	 <a href="#/state2">Go to Lunch foods.</a>
 	<br><button class="button button-full button-positive">
 	  Omelette(154 Calories)
 	</button>	
@@ -105,12 +105,8 @@
          <br><h2>Lunch Foods!</h2></br>
           <a href="#/state3">Go to Dinner Foods </a>
 
-	 <br><button class="button button-full button-assertive
-          Tomato Soup with Basil and Cream(100 calories
-        </button>
-
         <button class="button button-full button-calm">
-         Chicken Caesar Salad with Dressing(265 Calories)
+         Chicken Caesar Salad and Dressing(265 Calories)
           </button>
 
         <button class="button button-full button-energized">
@@ -154,16 +150,91 @@ i      </ion-view>
         <ion-content>
           <br><h2>Dinner Foods!</h2></br>
           <a href="#/state4">Go to Beverages.</a>
+
+        <button class="button button-full button-assertive">
+         Slice of Pepperoni and Cheese Pizza(300 Calories)
+          </button>
+
+        <button class="button button-full button-positive">
+          Spaghetti and Meatballs with Tomato Sauce(969 Calories) 
+         </button>
+
+        <button class="button button-full button-balanced">
+          Cheeseburger with Lettuce(265 Calories)
+          </button>
+
+        <button class="button button-full button-energized">
+          Beef Stir-Fry(320 Calories)
+          </button>
+
+        <button class="button button-full button-calm">
+          Pork Chops with Potatoes and Beans(520 Calories)
+         </button>
+
+        <button class="button button-full button-assertive">
+          Club Sandwich(220 Calories)
+         </button>
+
+        <button class="button button-full button-balanced">
+          Chicken Fajita with vegetables(350 Calories)
+          </button>
+
+	<button class="button button-full button-royal">
+          Bacon and Cabbage(236 Calories)
+         </button>
+
+        <button class="button button-full button-energized">
+         Roast Salmon with Potatoes and Asparagus(560 Calories)
+          </button>
         </ion-content>
       </ion-view>
     </script>
 
  <script type="text/ng-template" id="state4.html">
       <ion-view view-title="StateFour">
-        <iion-content>
+        <ion-content>
           <br><h2>Beverages!</h2></br>
+
+ 	<br><button class="button button-full button-energized">
+          Bag of Crisps(165 Calories)
+        </button>
+
+        <button class="button button-full button-positive">
+         Crackers with Cheese(137 Calories)
+          </button>
+
+        <button class="button button-full button-calm">
+          Chocolate Bar(235 Calories)
+         </button>
+
+        <button class="button button-full button-balanced">
+          Cup of Tea with Whole Milk and One Sugar(43 Calories)
+          </button>
+
+        <button class="button button-full button-royal">
+          Popcorn(106 Calories)
+          </button>
+
+        <button class="button button-full button-calm">
+         Vegetable Stick Mix and Dip(270 Calories)
+         </button>
+
+        <button class="button button-full button-assertive">
+          Chocolate Ice Cream(260 Calories)
+         </button>
+
+        <button class="button button-full button-energized">
+           Fizzy Drinks 330ml(145 Calories)
+          </button>
+
+	<button class="button button-full button-positive">
+          Fruit Smoothie with Ginger, Berries and Oats(179 Calories)
+          </button>
+
         </ion-content>
       </ion-view>
+	
+	
     </script>
   </body>
 </html>
