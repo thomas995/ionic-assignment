@@ -12,6 +12,7 @@
     <script src="cordova.js"></script>
 
     <script type="text/javascript">
+
       angular.module('ionic-navview', ['ionic'])
 
       .config(function($stateProvider, $urlRouterProvider) {
@@ -21,7 +22,7 @@
 
         $stateProvider
 
-        .state('state1', {
+        .state('state1', { 
           url: '/',
           templateUrl: 'state1.html'
         })
@@ -41,22 +42,25 @@
 	  templateUrl: 'state4.html'
 	});
 })
+
     </script>
 
   </head>
-  <body ng-app="ionic-navview">
+  <body ng-app="ionic-navview"> <!-- Sorts the layout of the pages -->
     <ion-nav-view>
     </ion-nav-view>
 
-<div class="bar bar-header bar-dark">
-<h1 class="title">Calorie Counter for a Day</h1><br>
-</div>
+ <!-- Black bar for the heading -->
 
+ <div class="bar bar-header bar-dark">
+ <h1 class="title">Calorie Counter for a Day</h1><br> <!-- Title for the app -->
+ </div>
+
+    <!-- Code for the first web page for Breakfast -->
     <script type="text/ng-template" id="state1.html">
       <ion-view view-title="Home">
         <ion-content>
          <br><h2>Breakfast Foods!</h2>
-	<h2 style="text-align: left"> <span-style="color: #FF0066;">Please Select<b> Only One</b> Food Item From Each List! </span></h2>
 	 <a href="#/state2">Go to Lunch foods.</a>
 	<br><button class="button button-full button-positive">
 	  Omelette(154 Calories)
@@ -99,11 +103,13 @@
       </ion-view>
     </script>
 
+     <!-- Code for the second web page for Lunch -->
+
     <script type="text/ng-template" id="state2.html">
       <ion-view view-title="StateTwo">
         <ion-content>
          <br><h2>Lunch Foods!</h2></br>
-          <a href="#/state3">Go to Dinner Foods </a>
+          <a href="#/state3">Go to Dinner Foods.</a>
 
         <button class="button button-full button-calm">
          Chicken Caesar Salad and Dressing(265 Calories)
@@ -145,11 +151,13 @@
 i      </ion-view>
     </script>
 
+<!-- Code for the third web page for Dinner -->
+
    <script type="text/ng-template" id="state3.html">
      <ion-view view-title="StateThree">
         <ion-content>
           <br><h2>Dinner Foods!</h2></br>
-          <a href="#/state4">Go to Beverages.</a>
+          <a href="#/state4">Go to Beverages and Snacks.</a>
 
         <button class="button button-full button-assertive">
          Slice of Pepperoni and Cheese Pizza(300 Calories)
@@ -190,10 +198,12 @@ i      </ion-view>
       </ion-view>
     </script>
 
+<!-- Code for the fourth web page for Beverages and Snacks -->
+
  <script type="text/ng-template" id="state4.html">
       <ion-view view-title="StateFour">
         <ion-content>
-          <br><h2>Beverages!</h2></br>
+          <br><h2>Beverages and Snacks!</h2></br>
 
  	<br><button class="button button-full button-energized">
           Bag of Crisps(165 Calories)
@@ -232,9 +242,7 @@ i      </ion-view>
           </button>
 
         </ion-content>
-      </ion-view>
-	
-	
+      </ion-view>	
     </script>
   </body>
 </html>
