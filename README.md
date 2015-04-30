@@ -1,5 +1,2 @@
-# Mobile Application Development Project Template
-You must use this template to start your project.
-
-## How to get this template
-You can clone it using 'git clone <url>' where <url> is the ssh url on the right, or you can click "Download ZIP" on the right and start from there.
+Ionic Assignment Project - Thomas McNamara G00314495
+My App allows the user to see the calories that can be found in each food food that is displayed in the list. There is a total of four lists for every meal of the day; Breakfast, Lunch, Dinner and Snacks and Beverages. To navigate to each page, A click event is placed on the top of the page to easily go between all thepages. Each type of food in all the lists are given different colours to easily seperate them all from each other. There is also an ellipses placed between all the food items that displays the calories with a simple click event.
